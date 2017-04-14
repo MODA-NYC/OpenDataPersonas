@@ -68,7 +68,14 @@
 
 </div>
 
-<a href="#" class="toggle-nav">Toggle Nav</a>
+<a href="#" class="toggle-nav">
+  <div class="nav-icon toggle-nav">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</a>
 
 
       <header class="contentWrapper">
@@ -143,10 +150,15 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
 
-$(function() {
-  $('.toggle-nav').click(function() {
+// $(function() {
+//   $('.toggle-nav').click(function() {
+//     toggleNav();
+//   });
+// });
+
+$('.nav-icon').click(function(){
+		$('.nav-icon').toggleClass('open');
     toggleNav();
-  });
 });
 
 function toggleNav() {
@@ -156,6 +168,8 @@ function toggleNav() {
     $('.site-wrapper').addClass('show-nav');
   }
 }
+
+
 </script>
 
 
