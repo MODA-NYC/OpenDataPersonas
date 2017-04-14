@@ -383,6 +383,11 @@ body {
 img {
   max-width: 100%; }
 
+footer {
+  border-top: 1px solid #fff;
+  padding: 0;
+  margin: 2rem; }
+
 h1,
 h2 {
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; }
@@ -412,7 +417,7 @@ blockquote {
 
 .thumbWrapper {
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: 5rem auto; }
   @media (max-width: 600px) {
     .thumbWrapper {

@@ -1,6 +1,6 @@
 ---
 layout: persona
-title: About
+title: Busy Bystander
 person: sarah
 role: Busy Bystander
 age: 22

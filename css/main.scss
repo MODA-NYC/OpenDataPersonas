@@ -19,11 +19,17 @@ body {
 }
 
 .contentWrapper {
-  padding: 2rem;
+  padding: $wrapperPad;
 }
 
 img {
   max-width: 100%;
+}
+
+footer {
+  border-top: 1px solid $white;
+  padding: 0;
+  margin: $wrapperPad;
 }
 
 // General Typography
@@ -64,7 +70,7 @@ blockquote {
 
 .thumbWrapper {
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: 5rem auto;
 
   @include breakpoint(mobile) {

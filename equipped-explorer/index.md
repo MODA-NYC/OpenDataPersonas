@@ -1,6 +1,6 @@
 ---
 layout: persona
-title: About
+title: Equipped Explorer
 person: marcus
 role: Equipped Explorer
 age: 42
@@ -21,4 +21,4 @@ Outside of work, Marcus is moderately active in his community. He started going 
 
 Marcus has recently become familiar with the open data portal—at first glance he is much more impressed with it over other data sites he has accessed—but hasn’t found a way to use it. He has browsed through a few data sets and downloaded a subset of 311 data were explored what different complaints were close to the Gowanus canal—toying with different ideas to support the Conservancy efforts, but nothing really came of it.
 
-Although Marcus doesn’t have a lot of experience with the open data portal, he has accessed national open data sources in the past. Last month, he attended a Climate Data Jam where he examined climate data, and designed a storytelling project to a non-scientist audience. 
+Although Marcus doesn’t have a lot of experience with the open data portal, he has accessed national open data sources in the past. Last month, he attended a Climate Data Jam where he examined climate data, and designed a storytelling project to a non-scientist audience.

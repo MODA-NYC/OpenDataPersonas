@@ -1,7 +1,8 @@
 ---
 layout: persona
+title: Influential Interpreter
 person: june
-role: Community-Oriented Curator
+role: Influential Interpreter
 age: 28
 occupation: Policy Associate at an eviction-prevention nonprofit
 quote: “We don’t want to be the stereotype, and we don’t want to be tone deaf to the communities who have been working on these issues for years. For us, it’s not about how quickly we can get the data out there, but rather it’s about the impact.”

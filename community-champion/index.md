@@ -1,6 +1,6 @@
 ---
 layout: persona
-title: About
+title: Community Champion
 person: alana
 role: Community Champion
 age: 42

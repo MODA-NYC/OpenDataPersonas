@@ -1,11 +1,11 @@
 ---
 layout: persona
-title: About
+title: Meticulous Mapper
 person: kent
 role: Meticulous Mapper
 age: 34
 occupation: Lead Developer at a Cool Civic Mapping Startup
-quote: 
+quote:
 
 ---
 
