@@ -1,0 +1,154 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "normalize";
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "variables";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: $red;
+  font-size: 22px;
+  font-family: $serif;
+}
+
+.contentWrapper {
+  padding: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+// General Typography
+
+h1,
+h2 {
+  font-family: $sansSerif;
+}
+
+p {
+  font-family: $serif;
+  line-height: 1.6;
+  margin: 0 auto 1rem;
+  max-width: 50rem;
+}
+
+// Homepage
+
+.introHeading {
+  color: $white;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.thumbWrapper {
+  display: flex;
+  width: 80%;
+  margin: 5rem auto;
+}
+
+.thumb {
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 33%;
+  color: $white;
+}
+
+.thumb__name {
+  display: block;
+  text-transform: uppercase;
+  font-family: $sansSerif;
+  opacity: .6;
+}
+
+.thumb__title {
+  display: block;
+}
+
+// Persona Page
+
+.personaTitle {
+  display: flex;
+  align-items: center;
+  color: $white;
+}
+
+.personaTitle__thumb {
+  flex: 2;
+}
+
+.personaTitle__textWrap {
+  flex: 4;
+}
+
+.personaTitle__textWrap__name {
+  display: block;
+  font-family: $sansSerif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  opacity: .6;
+}
+
+.personaTitle__textWrap__role {
+  display: block;
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+.personaTitle__skillWrap {
+  flex: 2;
+}
+
+.personaTitle__textWrap__detailWrap {
+  display: flex;
+  flex: 2;
+  border-top: 1px solid $white;
+  font-family: $sansSerif;
+  margin-top: 1rem;
+}
+
+.detail {
+  padding: 1rem 1rem 0;
+  border-left: 1px solid $white;
+
+  &:first-child {
+    border: 0;
+  }
+}
+
+.detail__category {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.detail__content {
+  display: block;
+  font-size: 1.8rem;
+}
+
+.slideWrap {
+  display: flex;
+}
+
+.slideWrap__img {
+  flex: 1;
+
+  img {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+// Modifiers
+
+.whiteBG {
+  background: $white;
+}
