@@ -5,6 +5,7 @@ person: sarah
 role: Busy Bystander
 age: 22
 occupation: Student at Queensborough Community College
+quote:
 ---
 
 ## Background
