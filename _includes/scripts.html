@@ -1,0 +1,17 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+
+$(function() {
+  $('.toggle-nav').click(function() {
+    toggleNav();
+  });
+});
+
+function toggleNav() {
+  if ($('.site-wrapper').hasClass('show-nav')) {
+    $('.site-wrapper').removeClass('show-nav');
+  } else {
+    $('.site-wrapper').addClass('show-nav');
+  }
+}
+</script>
