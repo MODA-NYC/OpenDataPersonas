@@ -18,12 +18,65 @@
 
   <body>
 
-    <header class="contentWrapper">
+    <div class="site-wrapper">
+      <div class="site-canvas">
+
+      <div class="site-menu">
+
+  <div class="thumb">
+    <a href="/busy-bystander">
+      <img src="/assets/img/sarah.png" />
+    </a>
+    <span class="thumb__name">Sarah</span>
+    <span class="thumb__title">Busy Bystander</span>
+  </div>
+  <div class="thumb">
+    <a href="/equipped-explorer">
+      <img src="/assets/img/marcus.png" />
+    </a>
+    <span class="thumb__name">Marcus</span>
+    <span class="thumb__title">Equipped Explorer</span>
+  </div>
+  <div class="thumb">
+      <a href="/community-oriented-curator">
+        <img src="/assets/img/roman.png" />
+      </a>
+    <span class="thumb__name">Roman</span>
+    <span class="thumb__title">Community-Oriented Curator</span>
+  </div>
+  <div class="thumb">
+    <a href="/influential-interpreter">
+      <img src="/assets/img/june.png" />
+    </a>
+    <span class="thumb__name">June</span>
+    <span class="thumb__title">Influential Interpreter</span>
+  </div>
+  <div class="thumb">
+    <a href="/meticulous-mapper">
+      <img src="/assets/img/kent.png" />
+    </a>
+    <span class="thumb__name">Kent</span>
+    <span class="thumb__title">Meticulous Mapper</span>
+  </div>
+  <div class="thumb">
+    <a href="/community-champion">
+      <img src="/assets/img/alana.png" />
+    </a>
+    <span class="thumb__name">Alana</span>
+    <span class="thumb__title">Community Champion</span>
+  </div>
+
+</div>
+
+<a href="#" class="toggle-nav">Toggle Nav</a>
+
+
+      <header class="contentWrapper">
 <a href="/">HOME</a>
 </header>
 
 
-    <div class="contentWrapper">
+      <div class="contentWrapper">
 
   <div class="personaTitle">
     <div class="personaTitle__thumb">
@@ -79,7 +132,7 @@
 </div>
 
 
-    <footer class="contentWrapper">
+      <footer class="contentWrapper">
 
   <h4 class="footer-heading">NYC Open Data Users</h4>
 
@@ -87,7 +140,28 @@
 
 </footer>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
 
+$(function() {
+  $('.toggle-nav').click(function() {
+    toggleNav();
+  });
+});
+
+function toggleNav() {
+  if ($('.site-wrapper').hasClass('show-nav')) {
+    $('.site-wrapper').removeClass('show-nav');
+  } else {
+    $('.site-wrapper').addClass('show-nav');
+  }
+}
+</script>
+
+
+
+      </div>
+    </div>
   </body>
 
 </html>
