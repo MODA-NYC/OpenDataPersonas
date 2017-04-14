@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div class="contentWrapper">
+
+  <div class="personaTitle">
+    <div class="personaTitle__thumb">
+      <img src="{{ site.baseurl }}/assets/img/{{ page.person }}.png" />
+    </div>
+    <div class="personaTitle__textWrap">
+      <span class="personaTitle__textWrap__name">{{ page.person }}</span>
+      <span class="personaTitle__textWrap__role">{{ page.role }}</span>
+      <div class="personaTitle__textWrap__detailWrap">
+        <div class="detail">
+          <span class="detail__category">Age</span>
+          <span class="detail__content">{{ page.age }}</span>
+        </div>
+        <div class="detail">
+          <span class="detail__category">Occupation</span>
+          <span class="detail__content">{{ page.occupation }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="personaTitle__skillWrap">
+      <img src="{{ site.baseurl }}/assets/img/{{ page.person }}_skills.png" />
+    </div>
+  </div>
+
+</div>
+<div class="contentWrapper whiteBG">
+  <div class="slideWrap">
+    <div class="slideWrap__img">
+      <img src="{{ site.baseurl }}/assets/img/{{ page.person }}_slider1.png" />
+    </div>
+    <div class="slideWrap__img">
+      <img src="{{ site.baseurl }}/assets/img/{{ page.person }}_slider2.png" />
+    </div>
+    <div class="slideWrap__img">
+      <img src="{{ site.baseurl }}/assets/img/{{ page.person }}_slider3.png" />
+    </div>
+  </div>
+
+  <blockquote>
+    {{ page.quote }}
+  </blockquote>
+
+  {{ content }}
+</div>

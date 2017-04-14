@@ -1,0 +1,346 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "normalize";
+@import "mixins";
+@import "variables";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: $red;
+  font-size: 22px;
+  font-family: $serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contentWrapper {
+  padding: $wrapperPad;
+
+  @include breakpoint(mobile) {
+    padding: 1rem;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+footer {
+  border-top: 1px solid $white;
+  padding: 0;
+  margin: $wrapperPad;
+}
+
+// Navigation Styles
+
+.logo {
+  color: $white;
+  text-decoration: none;
+  opacity: .5;
+}
+
+.site-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.site-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateX(0);
+  transition: .3s ease all;
+}
+
+.site-menu {
+  width: 300px;
+  height: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -300px;
+  background: $darkGrey;
+  padding: $wrapperPad;
+  overflow: scroll;
+
+  .thumb {
+    margin: 0 auto 2rem;
+
+    img {
+      width: 7rem;
+    }
+  }
+}
+
+.toggle-nav {
+  position: absolute;
+  right: $wrapperPad;
+  cursor: pointer;
+}
+.site-wrapper.show-nav .site-canvas {
+  transform: translateX(-300px);
+}
+
+// From: https://codepen.io/designcouch/pen/Atyop
+
+.nav-icon {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  margin: 2rem 0;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-icon span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: $darkGrey;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.nav-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.nav-icon span:nth-child(2),
+.nav-icon span:nth-child(3) {
+  top: 18px;
+}
+
+.nav-icon span:nth-child(4) {
+  top: 36px;
+}
+
+.nav-icon.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.nav-icon.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.nav-icon.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.nav-icon.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+// General Typography
+
+h1,
+h2 {
+  font-family: $sansSerif;
+}
+
+h2 {
+  text-align: center;
+  margin: 3rem auto 2rem;
+  color: $grey;
+}
+
+p {
+  font-family: $serif;
+  line-height: 1.6;
+  margin: 0 auto 1rem;
+  max-width: 50rem;
+  font-size: 1.35rem;
+
+  @include breakpoint(mobile) {
+    font-size: 1.1rem;
+  }
+}
+
+blockquote {
+  font-size: 2.3rem;
+  max-width: 60rem;
+  font-style: italic;
+  line-height: 1.4;
+  margin: 4rem auto;
+}
+
+// Homepage
+
+.introHeading {
+  color: $white;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.thumbWrapper {
+  display: flex;
+  width: 90%;
+  margin: 5rem auto;
+
+  @include breakpoint(mobile) {
+    flex-direction: column;
+  }
+}
+
+.thumb {
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 33%;
+  color: $white;
+}
+
+.thumb__name {
+  display: block;
+  text-transform: uppercase;
+  font-family: $sansSerif;
+  opacity: .6;
+}
+
+.thumb__title {
+  display: block;
+}
+
+// Persona Page
+
+.personaTitle {
+  display: flex;
+  align-items: center;
+  color: $white;
+
+  @include breakpoint(tablet) {
+    align-items: flex-start;
+  }
+
+  @include breakpoint(mobile) {
+    flex-direction: column;
+  }
+}
+
+.personaTitle__thumb {
+  flex: 2;
+}
+
+.personaTitle__textWrap {
+  flex: 4;
+
+  @include breakpoint(tablet) {
+    flex: 3;
+  }
+}
+
+.personaTitle__textWrap__name {
+  display: block;
+  font-family: $sansSerif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  opacity: .6;
+
+  @include breakpoint(mobile) {
+    font-size: 1.5rem;
+  }
+}
+
+.personaTitle__textWrap__role {
+  display: block;
+  font-weight: 800;
+  font-size: 4rem;
+
+  @include breakpoint(tablet) {
+    font-size: 3rem;
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 2.5rem;
+  }
+}
+
+.personaTitle__skillWrap {
+  flex: 2;
+}
+
+.personaTitle__textWrap__detailWrap {
+  display: flex;
+  flex: 2;
+  border-top: 1px solid $white;
+  font-family: $sansSerif;
+  margin-top: 1rem;
+}
+
+.detail {
+  padding: 1rem 1rem 0;
+  border-left: 1px solid $white;
+
+  &:first-child {
+    border: 0;
+  }
+}
+
+.detail__category {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  opacity: .5;
+  letter-spacing: .1rem;
+  margin-bottom: .5rem;
+
+  @include breakpoint(tablet) {
+    font-size: .8rem;
+  }
+}
+
+.detail__content {
+  display: block;
+  font-size: 1.8rem;
+
+  @include breakpoint(tablet) {
+    font-size: 1.2rem;
+  }
+}
+
+.slideWrap {
+  display: flex;
+
+  @include breakpoint(mobile) {
+    flex-direction: column;
+  }
+}
+
+.slideWrap__img {
+  flex: 1;
+  padding: 2rem;
+
+  @include breakpoint(tablet) {
+    padding: 1rem;
+  }
+
+  @include breakpoint(mobile) {
+    padding: 0;
+  }
+
+  img {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+// Modifiers
+.whiteBG {
+  background: $white;
+}
