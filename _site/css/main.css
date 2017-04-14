@@ -375,10 +375,15 @@ template {
 body {
   background: #ce5f45;
   font-size: 22px;
-  font-family: "Merriweather", serif; }
+  font-family: "Merriweather", serif;
+  margin: 0;
+  padding: 0; }
 
 .contentWrapper {
   padding: 2rem; }
+  @media (max-width: 600px) {
+    .contentWrapper {
+      padding: 1rem; } }
 
 img {
   max-width: 100%; }
@@ -387,6 +392,11 @@ footer {
   border-top: 1px solid #fff;
   padding: 0;
   margin: 2rem; }
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  opacity: .5; }
 
 .site-wrapper {
   position: relative;
@@ -400,12 +410,11 @@ footer {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-  padding: 5% 0;
-  /* Temp: Just spacing. */ }
+  transition: .3s ease all; }
 
 .site-menu {
   width: 300px;
+  height: 100%;
   height: 100%;
   position: absolute;
   top: 0;
@@ -431,7 +440,7 @@ footer {
   width: 60px;
   height: 45px;
   position: relative;
-  margin: 50px auto;
+  margin: 2rem 0;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   -webkit-transition: .5s ease-in-out;
@@ -493,7 +502,11 @@ p {
   font-family: "Merriweather", serif;
   line-height: 1.6;
   margin: 0 auto 1rem;
-  max-width: 50rem; }
+  max-width: 50rem;
+  font-size: 1.35rem; }
+  @media (max-width: 600px) {
+    p {
+      font-size: 1.1rem; } }
 
 blockquote {
   font-size: 2.3rem;
@@ -546,6 +559,11 @@ blockquote {
       -ms-flex-align: center;
           align-items: center;
   color: #fff; }
+  @media (max-width: 800px) {
+    .personaTitle {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
   @media (max-width: 600px) {
     .personaTitle {
       -webkit-box-orient: vertical;
@@ -562,6 +580,11 @@ blockquote {
   -webkit-box-flex: 4;
       -ms-flex: 4;
           flex: 4; }
+  @media (max-width: 800px) {
+    .personaTitle__textWrap {
+      -webkit-box-flex: 3;
+          -ms-flex: 3;
+              flex: 3; } }
 
 .personaTitle__textWrap__name {
   display: block;
@@ -578,6 +601,9 @@ blockquote {
   display: block;
   font-weight: 800;
   font-size: 4rem; }
+  @media (max-width: 800px) {
+    .personaTitle__textWrap__role {
+      font-size: 3rem; } }
   @media (max-width: 600px) {
     .personaTitle__textWrap__role {
       font-size: 2.5rem; } }
@@ -611,10 +637,16 @@ blockquote {
   opacity: .5;
   letter-spacing: .1rem;
   margin-bottom: .5rem; }
+  @media (max-width: 800px) {
+    .detail__category {
+      font-size: .8rem; } }
 
 .detail__content {
   display: block;
   font-size: 1.8rem; }
+  @media (max-width: 800px) {
+    .detail__content {
+      font-size: 1.2rem; } }
 
 .slideWrap {
   display: -webkit-box;
@@ -632,6 +664,12 @@ blockquote {
       -ms-flex: 1;
           flex: 1;
   padding: 2rem; }
+  @media (max-width: 800px) {
+    .slideWrap__img {
+      padding: 1rem; } }
+  @media (max-width: 600px) {
+    .slideWrap__img {
+      padding: 0; } }
   .slideWrap__img img {
     margin: 0 auto;
     display: block; }
