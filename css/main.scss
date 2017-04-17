@@ -38,6 +38,50 @@ footer {
   margin: $wrapperPad;
 }
 
+// General Typography
+
+h1,
+h2 {
+  font-family: $sansSerif;
+}
+
+h2 {
+  text-align: center;
+  margin: 3rem auto 2rem;
+  color: $grey;
+}
+
+p {
+  font-family: $serif;
+  line-height: 1.6;
+  margin: 0 auto 1rem;
+  max-width: 50rem;
+  font-size: 1.35rem;
+  color: $darkGrey;
+
+  @include breakpoint(mobile) {
+    font-size: 1.1rem;
+  }
+}
+
+blockquote {
+  font-size: 2.2rem;
+  max-width: 60rem;
+  font-style: italic;
+  line-height: 1.4;
+  margin: 4rem auto;
+  color: $grey;
+
+  @include breakpoint(tablet) {
+    font-size: 1.9rem;
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 1.6rem;
+  }
+}
+
+
 // Navigation Styles
 
 .logo {
@@ -84,6 +128,10 @@ footer {
   position: absolute;
   right: $wrapperPad;
   cursor: pointer;
+
+  @include breakpoint(mobile) {
+    right: 1rem;
+  }
 }
 .site-wrapper.show-nav .site-canvas {
   transform: translateX(-300px);
@@ -147,39 +195,6 @@ footer {
   left: 50%;
 }
 
-// General Typography
-
-h1,
-h2 {
-  font-family: $sansSerif;
-}
-
-h2 {
-  text-align: center;
-  margin: 3rem auto 2rem;
-  color: $grey;
-}
-
-p {
-  font-family: $serif;
-  line-height: 1.6;
-  margin: 0 auto 1rem;
-  max-width: 50rem;
-  font-size: 1.35rem;
-
-  @include breakpoint(mobile) {
-    font-size: 1.1rem;
-  }
-}
-
-blockquote {
-  font-size: 2.3rem;
-  max-width: 60rem;
-  font-style: italic;
-  line-height: 1.4;
-  margin: 4rem auto;
-}
-
 // Homepage
 
 .introHeading {
@@ -234,6 +249,10 @@ blockquote {
 
 .personaTitle__thumb {
   flex: 2;
+
+  @include breakpoint(mobile) {
+    width: 15rem;
+  }
 }
 
 .personaTitle__textWrap {
