@@ -6,7 +6,7 @@ layout: default
 
   <div class="personaTitle">
     <div class="personaTitle__thumb">
-      <img src="{{ site.baseurl }}/assets/img/{{ page.person }}.png" />
+      {% include {{ page.person | escape }}.html %}
     </div>
     <div class="personaTitle__textWrap">
       <span class="personaTitle__textWrap__name">{{ page.person }}</span>
