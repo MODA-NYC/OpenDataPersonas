@@ -1,8 +1,8 @@
 ---
 layout: persona
-title: Local Liason
+title: Local Liaison
 person: roman
-role: Local Liason
+role: Local Liaison
 age: 38
 occupation: Project Manager at a Bronx community services nonprofit
 quote: “Open data is in world full of technical people. I am torn about this, on one hand it's  important for the city to provide broad data, on the other hand, it causes average citizens to become reliant on technologists.”
