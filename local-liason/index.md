@@ -1,8 +1,8 @@
 ---
 layout: persona
-title: Community-Oriented Curator
+title: Local Liason
 person: roman
-role: Community-Oriented Curator
+role: Local Liason
 age: 38
 occupation: Project Manager at a Bronx community services nonprofit
 quote: “Open data is in world full of technical people. I am torn about this, on one hand it's  important for the city to provide broad data, on the other hand, it causes average citizens to become reliant on technologists.”
@@ -25,4 +25,4 @@ Roman believes in making open source tools that collect and frame raw data in a 
 
 In the past he has brought together community groups and lenders to better understand if his database is serving their needs or not—but most of the time he gets feedback much more informally. Often community members will call him up to ask all kinds of questions—about  Excel, a dataset, or certain policies.
 
-Although Roman hasn’t talked with a manager of a city data set, the understandable operational and bureaucratic barriers associated with city agencies makes him skeptical about the reliability of open data. Recognizing that much of the data can be political, he understands that while the more “juicy” data he desires may exist somewhere within an agency, and he doubts he will ever get his hands on it.
+Although Roman hasn’t talked with a manager of a city data set, the understandable operational and bureaucratic barriers associated with city agencies makes him skeptical about the reliability of open data. Recognizing that much of the data can be political, he understands that the more “juicy” data he desires may exist somewhere within an agency, and he doubts he will ever get his hands on it.
