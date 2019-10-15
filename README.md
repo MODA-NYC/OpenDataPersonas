@@ -8,6 +8,8 @@ The site is available at https://thereboot.github.io/moti-personas.
 
 This site is built using Jekyll, and is hosted through Github pages. For more information on how to work with a Jekyll site view [their documentation](https://jekyllrb.com/docs/home/). Visual assets view created in Adobe Illustrator, and are not included in the repository.
 
+If you'll be hosting the site on Github Pages be sure the change the `baseurl` and `url` in the `_config.yml` file. 
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/theReboot/moti-personas.
