@@ -2,7 +2,7 @@
 
 These user personas were created by Reboot for the NYC Mayor's Office of Data Analytics in support of the Open Data for All initiative. The personas are an output of a three week design sprint with open data users across New York City. After conducting interviews, the team analyzed each unique experience—finding common themes and patterns—to create groups of similar users, these groups were then further analyzed into the composites seen here.
 
-The site is available at https://github.com/MODA-NYC/OpenDataPersonas.
+The site is available at https://moda-nyc.github.io/OpenDataPersonas/.
 
 ## Installation
 
